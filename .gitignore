@@ -1,0 +1,58 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+dist/
+dist-check/
+dist-verify/
+dist-verify3/
+build/
+.next/
+.parcel-cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# ML trained models (large binary files)
+trained_models/*.pkl
+trained_models/*.joblib
+
+# Uploads
+uploads/
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Test coverage
+coverage/
+
+# Vite timestamp temp files
+vite.config.js.timestamp-*
+
+# Docker
+*.pid

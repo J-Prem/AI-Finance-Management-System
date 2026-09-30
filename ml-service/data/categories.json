@@ -1,0 +1,95 @@
+{
+  "categories": {
+    "Food": {
+      "keywords": ["food", "restaurant", "cafe", "pizza", "burger", "swiggy", "zomato", "dominos", "bakery", "meal", "lunch", "dinner", "breakfast"],
+      "emoji": "🍔",
+      "description": "Dining and food services"
+    },
+    "Transport": {
+      "keywords": ["uber", "ola", "taxi", "bus", "metro", "rapido", "fuel", "petrol", "diesel", "parking", "toll", "auto", "cab"],
+      "emoji": "🚗",
+      "description": "Transportation services"
+    },
+    "Shopping": {
+      "keywords": ["amazon", "flipkart", "myntra", "store", "mall", "shop", "retail", "clothing", "dress", "shoes", "apparel", "buy"],
+      "emoji": "🛍️",
+      "description": "Retail shopping"
+    },
+    "Entertainment": {
+      "keywords": ["netflix", "amazon prime", "movie", "cinema", "pvr", "inox", "gaming", "game", "spotify", "music", "theater", "show"],
+      "emoji": "🎬",
+      "description": "Entertainment and streaming"
+    },
+    "Bills": {
+      "keywords": ["electricity", "water", "gas", "internet", "phone", "mobile", "credit card", "insurance", "utility", "bill", "payment"],
+      "emoji": "📄",
+      "description": "Bills and utilities"
+    },
+    "Healthcare": {
+      "keywords": ["hospital", "doctor", "pharmacy", "clinic", "medical", "health", "medicine", "dental", "surgeon", "prescription"],
+      "emoji": "🏥",
+      "description": "Healthcare services"
+    },
+    "Education": {
+      "keywords": ["school", "college", "university", "course", "training", "education", "learning", "academy", "tuition", "exam"],
+      "emoji": "📚",
+      "description": "Education and training"
+    },
+    "Travel": {
+      "keywords": ["hotel", "airline", "flight", "train", "booking", "resort", "airbnb", "travel", "vacation", "trip", "tour"],
+      "emoji": "✈️",
+      "description": "Travel and accommodation"
+    },
+    "Groceries": {
+      "keywords": ["grocery", "supermarket", "dmart", "bigbasket", "flipkart grocery", "vegetables", "fruits", "milk", "bread"],
+      "emoji": "🛒",
+      "description": "Grocery shopping"
+    },
+    "Subscriptions": {
+      "keywords": ["subscription", "membership", "premium", "app", "subscription", "annual"],
+      "emoji": "📱",
+      "description": "Subscriptions and memberships"
+    },
+    "Salary": {
+      "keywords": ["salary", "wage", "income", "payroll", "compensation", "earnings"],
+      "emoji": "💰",
+      "description": "Income"
+    },
+    "Investment": {
+      "keywords": ["investment", "stocks", "mutual fund", "crypto", "portfolio", "broker"],
+      "emoji": "📈",
+      "description": "Investments"
+    },
+    "Freelance": {
+      "keywords": ["freelance", "contract", "project", "gig", "side income"],
+      "emoji": "💼",
+      "description": "Freelance income"
+    },
+    "Rent": {
+      "keywords": ["rent", "landlord", "apartment", "housing", "lease", "accommodation"],
+      "emoji": "🏠",
+      "description": "Rent and housing"
+    },
+    "Utilities": {
+      "keywords": ["utility", "maintenance", "repair", "maintenance", "upkeep"],
+      "emoji": "🔧",
+      "description": "Utilities and maintenance"
+    },
+    "Insurance": {
+      "keywords": ["insurance", "policy", "coverage", "premium"],
+      "emoji": "🛡️",
+      "description": "Insurance"
+    },
+    "Gifts": {
+      "keywords": ["gift", "present", "flowers", "birthday", "anniversary"],
+      "emoji": "🎁",
+      "description": "Gifts and presents"
+    },
+    "Other": {
+      "keywords": ["other", "misc", "miscellaneous"],
+      "emoji": "📌",
+      "description": "Other expenses"
+    }
+  },
+  "default_category": "Other"
+}

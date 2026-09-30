@@ -1,0 +1,246 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-border: #e2e8f0;
+  --color-background: #ffffff;
+}
+
+.dark {
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+  --color-border: #334155;
+  --color-background: #0f172a;
+}
+
+* {
+  @apply transition-colors duration-200;
+}
+
+body {
+  @apply bg-white dark:bg-navy-950 text-navy-900 dark:text-navy-100;
+  font-feature-settings: "rvrn";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gradient-primary {
+  @apply bg-gradient-to-r from-primary-500 via-primary-600 to-navy-800;
+}
+
+.gradient-emerald {
+  @apply bg-gradient-to-r from-emerald-500 to-emerald-600;
+}
+
+.gradient-warm {
+  @apply bg-gradient-to-r from-amber-500 to-rose-500;
+}
+
+.glass {
+  @apply bg-white/80 dark:bg-navy-800/80 backdrop-blur-md border border-white/20 dark:border-navy-700/50;
+}
+
+.glass-xl {
+  @apply backdrop-blur-xl bg-white/70 dark:bg-navy-900/60 border border-white/30 dark:border-navy-700/40;
+}
+
+/* mesh gradient backdrop — blurred orbs of color for hero sections */
+.mesh-bg {
+  background:
+    radial-gradient(1200px circle at 0% 0%,  rgba(14,165,233,0.18), transparent 40%),
+    radial-gradient(1000px circle at 100% 0%, rgba(139,92,246,0.18), transparent 40%),
+    radial-gradient(900px circle at 50% 100%, rgba(16,185,129,0.18), transparent 40%);
+}
+.dark .mesh-bg {
+  background:
+    radial-gradient(1200px circle at 0% 0%,  rgba(14,165,233,0.22), transparent 40%),
+    radial-gradient(1000px circle at 100% 0%, rgba(139,92,246,0.22), transparent 40%),
+    radial-gradient(900px circle at 50% 100%, rgba(16,185,129,0.22), transparent 40%);
+}
+
+/* hover lift */
+.hover-lift { @apply transition-transform duration-300; }
+.hover-lift:hover { transform: translateY(-3px); }
+
+.card {
+  @apply bg-white dark:bg-navy-800 rounded-xl border border-navy-200 dark:border-navy-700 shadow-sm;
+}
+
+.card-hover {
+  @apply card hover:shadow-md dark:hover:shadow-lg transition-all duration-300 cursor-pointer;
+}
+
+.input-base {
+  @apply px-4 py-3 bg-white dark:bg-navy-900 border border-navy-200 dark:border-navy-700 rounded-lg text-navy-900 dark:text-navy-100 placeholder-navy-400 dark:placeholder-navy-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:shadow-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-navy-100 dark:bg-navy-800 text-navy-900 dark:text-navy-100 font-semibold rounded-lg hover:bg-navy-200 dark:hover:bg-navy-700 border border-navy-200 dark:border-navy-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-success {
+  @apply px-6 py-3 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-600 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-danger {
+  @apply px-6 py-3 bg-rose-500 text-white font-semibold rounded-lg hover:bg-rose-600 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-sm {
+  @apply px-3 py-1.5 text-sm;
+}
+
+.btn-lg {
+  @apply px-8 py-4 text-lg;
+}
+
+.badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-primary {
+  @apply badge bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-200;
+}
+
+.badge-success {
+  @apply badge bg-emerald-100 dark:bg-emerald-900 text-emerald-700 dark:text-emerald-200;
+}
+
+.badge-warning {
+  @apply badge bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-200;
+}
+
+.badge-danger {
+  @apply badge bg-rose-100 dark:bg-rose-900 text-rose-700 dark:text-rose-200;
+}
+
+.text-truncate {
+  @apply truncate;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-hidden {
+    @apply -translate-x-full;
+  }
+}
+
+/* ============ Real-time UI — shimmers, glows, gradients ============ */
+@keyframes shimmer { 100% { transform: translateX(200%); } }
+.animate-shimmer { animation: shimmer 1.6s infinite; }
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.45); }
+  50%      { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+}
+.animate-pulse-glow { animation: pulseGlow 1.8s ease-out infinite; }
+
+@keyframes pulseGlowDown {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.45); }
+  50%      { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+}
+.animate-pulse-glow-down { animation: pulseGlowDown 1.8s ease-out infinite; }
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease infinite;
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+.animate-float { animation: floatY 3s ease-in-out infinite; }
+
+@keyframes scanline {
+  0%   { transform: translateY(-100%); opacity: 0.0; }
+  20%  { opacity: 0.8; }
+  100% { transform: translateY(100%); opacity: 0.0; }
+}
+.animate-scanline { animation: scanline 2.6s linear infinite; }
+
+/* marquee highlight */
+.highlight-bar {
+  background: linear-gradient(90deg, transparent, rgba(14,165,233,0.12) 50%, transparent);
+  background-size: 200% 100%;
+  animation: gradientShift 3s linear infinite;
+}
+
+/* live status strip */
+.status-bar {
+  background-size: 200% 100%;
+  animation: gradientShift 2s linear infinite;
+  background-image: linear-gradient(90deg, rgba(16,185,129,0.0) 0%, rgba(16,185,129,0.9) 50%, rgba(16,185,129,0.0) 100%);
+}
+
+/* tab slide indicator container */
+.tab-bar-slide { position: relative; }
